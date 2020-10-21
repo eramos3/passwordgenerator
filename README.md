@@ -21,4 +21,4 @@ THEN the password is either displayed in an alert or written to the page
 ```
 git clone git@github.com:eramos3/passwordgenerator.git
 ```
-[working deployed link recording](https://drive.google.com/file/d/1dOVAvxxMCTCL-K0eqUMu8IZNTvuLKd7v/view)
+<!-- [working deployed link recording]() --
