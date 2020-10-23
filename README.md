@@ -23,4 +23,4 @@ git clone git@github.com:eramos3/passwordgenerator.git
 ```
 [working deployed link recording](https://drive.google.com/file/d/1BS6FPF023e2SV99eLKUQop-7Yt4Rcs0P/view)
 
-![PasswordGenerator Screeshot](./develop/css/images/passgen.png)
+![PasswordGenerator Screeshot](./develop/images/passgen.png)
