@@ -1,5 +1,4 @@
 // Assignment code here
-
 // character choices
 var characters = {
   numbers: "0123456789",
@@ -7,8 +6,6 @@ var characters = {
   lowerCase: "abcdefghijklmnopqrstuvwxyz",
   special: "!#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 }
-
-
 // password generator function
 function generatePassword() {
   // stores user length choice
@@ -23,7 +20,6 @@ function generatePassword() {
   var userChoice = "";
 
   userLength = window.prompt("How long do you want your password to be? Choose a number bewtween 8 and 128");
-  console.log(userLength);
   if (userLength < 8 || userLength > 128 || isNaN(userLength)) {
     window.alert("Wrong choice, please try again");
     generatePassword();
@@ -37,7 +33,6 @@ function generatePassword() {
     if (userUpper) {
       userChoice = userChoice + characters.upperCase;
     }
-
     userLower = window.confirm("Do you want lower case letters? Click OK");
     if (userLower) {
       userChoice = userChoice + characters.lowerCase;
@@ -50,20 +45,14 @@ function generatePassword() {
       window.alert("You need to pick at least one choice");
       generatePassword();
     }
-    console.log(userChoice);
   }
-
-
   // where random password will be stored
   var random = "";
   // randomize password function using characters stored in userChoice
   for (var i = 0; i < userLength; i++) {
     random = random + userChoice.charAt(Math.floor(Math.random() * userChoice.length));
-
   }
   return (random);
-
-
 };
 
 
