@@ -22,7 +22,7 @@ function generatePassword() {
   userLength = window.prompt("How long do you want your password to be? Choose a number bewtween 8 and 128");
   if (userLength < 8 || userLength > 128 || isNaN(userLength)) {
     window.alert("Wrong choice, please try again");
-    generatePassword();
+      generatePassword.reset();
   } else {
     // ask user if they want to include one or all 4 choices in their password
     userNumbers = window.confirm("Do you want numbers in your password? Click OK ");
@@ -43,7 +43,7 @@ function generatePassword() {
     }
     if (userNumbers != true && userUpper != true && userLower != true && userSpecial != true) {
       window.alert("You need to pick at least one choice");
-      generatePassword();
+      generatePassword.reset();
     }
   }
   // where random password will be stored
